@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "IRANSansX";
+    src: url("https://db.onlinewebfonts.com/t/3410011f7a65e03accc7d82c83cc8972.eot");
+    src: url("https://db.onlinewebfonts.com/t/3410011f7a65e03accc7d82c83cc8972.eot?#iefix")format("embedded-opentype"),
+         url("https://db.onlinewebfonts.com/t/3410011f7a65e03accc7d82c83cc8972.woff2")format("woff2"),
+         url("https://db.onlinewebfonts.com/t/3410011f7a65e03accc7d82c83cc8972.woff")format("woff"),
+         url("https://db.onlinewebfonts.com/t/3410011f7a65e03accc7d82c83cc8972.ttf")format("truetype"),
+         url("https://db.onlinewebfonts.com/t/3410011f7a65e03accc7d82c83cc8972.svg#IRANSansX Regular")format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "IRANSansX";
+    src: url("https://db.onlinewebfonts.com/t/30d96e26d791255c14298567c0abc459.eot");
+    src: url("https://db.onlinewebfonts.com/t/30d96e26d791255c14298567c0abc459.eot?#iefix")format("embedded-opentype"),
+         url("https://db.onlinewebfonts.com/t/30d96e26d791255c14298567c0abc459.woff2")format("woff2"),
+         url("https://db.onlinewebfonts.com/t/30d96e26d791255c14298567c0abc459.woff")format("woff"),
+         url("https://db.onlinewebfonts.com/t/30d96e26d791255c14298567c0abc459.ttf")format("truetype"),
+         url("https://db.onlinewebfonts.com/t/30d96e26d791255c14298567c0abc459.svg#IRANSansX Medium")format("svg");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

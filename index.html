@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جیم‌فایندر - بهترین راهنمای شما برای یافتن باشگاه</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="https://db.onlinewebfonts.com/c/30d96e26d791255c14298567c0abc459?family=IRANSansX+Medium" type="text/css"/>
+    <style>
+        body {
+            font-family: "IRANSansX Medium", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-300 font-sans transition-colors duration-300">
+    <div id="app">
+        <!-- Header -->
+        <header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50 shadow-sm dark:shadow-indigo-500/10">
+            <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <a href="#" class="text-3xl font-bold text-slate-900 dark:text-white">جیم<span class="text-indigo-500">فایندر</span></a>
+                <div class="space-x-reverse space-x-8 hidden md:flex items-center">
+                    <a href="#gyms" class="hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300">یافتن باشگاه</a>
+                    <a href="#about" class="hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300">درباره ما</a>
+                    <a href="#faq" class="hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300">سوالات متداول</a>
+                    <a href="#contact" class="hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300">تماس با ما</a>
+                </div>
+                <div class="flex items-center">
+                    <button id="theme-toggle" class="text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 focus:outline-none rounded-lg text-sm p-2.5 me-2">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 5.05A1 1 0 016.465 3.636l.707.707a1 1 0 01-1.414 1.414l-.707-.707a1 1 0 010-1.414zM5 11a1 1 0 100-2H4a1 1 0 100 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    </button>
+                    <a href="/add-gym.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-5 py-2 rounded-full transition-transform transform hover:scale-105 hidden md:block shadow-lg text-sm">باشگاه خود را اضافه کنید</a>
+                    <button id="mobile-menu-button" class="md:hidden text-slate-800 dark:text-white focus:outline-none ms-2">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </nav>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-slate-800">
+                <a href="#gyms" class="block py-3 px-6 text-base hover:bg-slate-100 dark:hover:bg-slate-700">یافتن باشگاه</a>
+                <a href="#about" class="block py-3 px-6 text-base hover:bg-slate-100 dark:hover:bg-slate-700">درباره ما</a>
+                <a href="#faq" class="block py-3 px-6 text-base hover:bg-slate-100 dark:hover:bg-slate-700">سوالات متداول</a>
+                <a href="#contact" class="block py-3 px-6 text-base hover:bg-slate-100 dark:hover:bg-slate-700">تماس با ما</a>
+                <a href="/add-gym.html" class="block py-3 px-6 text-base hover:bg-slate-100 dark:hover:bg-slate-700">باشگاه خود را اضافه کنید</a>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section id="home" class="relative text-center py-28 px-6 bg-cover bg-center" style="background-image: url('/gym2.jpg');">
+                <div class="absolute inset-0 bg-black/60"></div>
+                <div class="relative z-10">
+                    <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-4">سفر تندرستی شما از اینجا آغاز می‌شود.</h1>
+                    <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-8">بهترین راهنما برای کشف، مقایسه و ارتباط با بهترین باشگاه‌های اطراف شما.</p>
+                    <div class="flex justify-center">
+                        <input type="text" placeholder="نام شهر یا کد پستی را وارد کنید" class="w-full max-w-md px-5 py-3 rounded-r-full bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-white border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+                        <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-8 py-3 rounded-l-full transition shadow-lg">جستجو</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gym Listings Section -->
+            <section id="gyms" class="py-24 bg-slate-100 dark:bg-slate-800/50">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl font-bold text-slate-900 dark:text-white">باشگاه‌های برتر</h2>
+                        <p class="text-slate-600 dark:text-slate-400 mt-2">دست‌چین شده بر اساس امکانات عالی و نظرات کاربران.</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                        <!-- Gym Card 1 -->
+                        <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                            <img src="/gym3.jpg" alt="باشگاه شهری مدرن" class="w-full h-48 object-cover">
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-2">باشگاه پاورهاوس</h3>
+                                <p class="text-slate-600 dark:text-slate-400 mb-4 flex-grow">تجهیزات پیشرفته در قلب شهر.</p>
+                                <div class="space-y-3 text-sm text-slate-600 dark:text-slate-400 border-t border-slate-200 dark:border-slate-700 pt-4">
+                                    <p><strong class="font-semibold text-slate-700 dark:text-slate-300">مراجعین:</strong> بانوان و آقایان</p>
+                                    <p><strong class="font-semibold text-slate-700 dark:text-slate-300">ساعات کاری:</strong> همه روزه ۲۴ ساعته</p>
+                                    <p><strong class="font-semibold text-slate-700 dark:text-slate-300">مکان:</strong> خیابان اصلی ۱۲۳، مترو سیتی</p>
+                                </div>
+                                <div class="flex justify-between items-center mt-6">
+                                    <span class="text-indigo-500 dark:text-indigo-400 font-bold text-lg">۵۰ دلار/ماه</span>
+                                    <a href="/powerhouse-fitness.html" class="bg-indigo-600 text-white px-5 py-2 rounded-full font-semibold text-sm hover:bg-indigo-700 transition">مشاهده جزئیات</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Gym Card 2 -->
+                        <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                            <img src="/gym4.jpg" alt="باشگاه کراس‌فیت" class="w-full h-48 object-cover">
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-2">باشگاه آیرون اند گریت</h3>
+                                <p class="text-slate-600 dark:text-slate-400 mb-4 flex-grow">خانه جدید شما برای کراس‌فیت، جامعه و نتایج.</p>
+                                <div class="space-y-3 text-sm text-slate-600 dark:text-slate-400 border-t border-slate-200 dark:border-slate-700 pt-4">
+                                    <p><strong class="font-semibold text-slate-700 dark:text-slate-300">مراجعین:</strong> بانوان و آقایان</p>
+                                    <p><strong class="font-semibold text-slate-700 dark:text-slate-300">ساعات کاری:</strong> دوشنبه تا جمعه: ۵ صبح تا ۱۱ شب</p>
+                                    <p><strong class="font-semibold text-slate-700 dark:text-slate-300">مکان:</strong> خیابان صنعتی ۴۵، سابربیا</p>
+                                </div>
+                                <div class="flex justify-between items-center mt-6">
+                                    <span class="text-indigo-500 dark:text-indigo-400 font-bold text-lg">۷۵ دلار/ماه</span>
+                                    <a href="/iron-grit.html" class="bg-indigo-600 text-white px-5 py-2 rounded-full font-semibold text-sm hover:bg-indigo-700 transition">مشاهده جزئیات</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Gym Card 3 -->
+                        <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                            <img src="/gym5.jpg" alt="استودیوی یوگا و سلامتی" class="w-full h-48 object-cover">
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-2">سلامتی زنیت</h3>
+                                <p class="text-slate-600 dark:text-slate-400 mb-4 flex-grow">تعادل خود را با کلاس‌های یوگا و سلامتی ما پیدا کنید.</p>
+                                <div class="space-y-3 text-sm text-slate-600 dark:text-slate-400 border-t border-slate-200 dark:border-slate-700 pt-4">
+                                    <p><strong class="font-semibold text-slate-700 dark:text-slate-300">مراجعین:</strong> فقط بانوان</p>
+                                    <p><strong class="font-semibold text-slate-700 dark:text-slate-300">ساعات کاری:</strong> دوشنبه تا شنبه: ۷ صبح تا ۹ شب</p>
+                                    <p><strong class="font-semibold text-slate-700 dark:text-slate-300">مکان:</strong> کوچه آرامش ۷۸، گرین ولی</p>
+                                </div>
+                                <div class="flex justify-between items-center mt-6">
+                                    <span class="text-indigo-500 dark:text-indigo-400 font-bold text-lg">۴۰ دلار/ماه</span>
+                                    <a href="/zenith-wellness.html" class="bg-indigo-600 text-white px-5 py-2 rounded-full font-semibold text-sm hover:bg-indigo-700 transition">مشاهده جزئیات</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Gym Card 4 -->
+                        <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                            <img src="/gym1.jpg" alt="باشگاه بدن‌سازی" class="w-full h-48 object-cover">
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-2">باشگاه سندان</h3>
+                                <p class="text-slate-600 dark:text-slate-400 mb-4 flex-grow">پناهگاه بدن‌سازی و پاورلیفتینگ سنتی.</p>
+                                <div class="space-y-3 text-sm text-slate-600 dark:text-slate-400 border-t border-slate-200 dark:border-slate-700 pt-4">
+                                    <p><strong class="font-semibold text-slate-700 dark:text-slate-300">مراجعین:</strong> فقط آقایان</p>
+                                    <p><strong class="font-semibold text-slate-700 dark:text-slate-300">ساعات کاری:</strong> دوشنبه تا شنبه: ۴ صبح تا ۱۲ شب</p>
+                                    <p><strong class="font-semibold text-slate-700 dark:text-slate-300">مکان:</strong> خیابان آهن ۹۹، منطقه فورج</p>
+                                </div>
+                                <div class="flex justify-between items-center mt-6">
+                                    <span class="text-indigo-500 dark:text-indigo-400 font-bold text-lg">۴۵ دلار/ماه</span>
+                                    <a href="/the-anvil-gym.html" class="bg-indigo-600 text-white px-5 py-2 rounded-full font-semibold text-sm hover:bg-indigo-700 transition">مشاهده جزئیات</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Gym Card 5 -->
+                        <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                            <img src="/gym6.jpg" alt="باشگاه خانوادگی" class="w-full h-48 object-cover">
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-2">مرکز تناسب اندام خانواده</h3>
+                                <p class="text-slate-600 dark:text-slate-400 mb-4 flex-grow">محیطی دلپذیر برای تمام سنین و سطوح تناسب اندام.</p>
+                                <div class="space-y-3 text-sm text-slate-600 dark:text-slate-400 border-t border-slate-200 dark:border-slate-700 pt-4">
+                                    <p><strong class="font-semibold text-slate-700 dark:text-slate-300">مراجعین:</strong> بانوان و آقایان</p>
+                                    <p><strong class="font-semibold text-slate-700 dark:text-slate-300">ساعات کاری:</strong> همه روزه: ۸ صبح تا ۹ شب</p>
+                                    <p><strong class="font-semibold text-slate-700 dark:text-slate-300">مکان:</strong> خیابان جامعه ۲۱۰، لیک‌ساید</p>
+                                </div>
+                                <div class="flex justify-between items-center mt-6">
+                                    <span class="text-indigo-500 dark:text-indigo-400 font-bold text-lg">۶۰ دلار/ماه</span>
+                                    <a href="/family-fit-center.html" class="bg-indigo-600 text-white px-5 py-2 rounded-full font-semibold text-sm hover:bg-indigo-700 transition">مشاهده جزئیات</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Gym Card 6 -->
+                        <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                            <img src="/gym2.jpg" alt="باشگاه تناسب اندام لوکس" class="w-full h-48 object-cover">
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-2">باشگاه اپکس</h3>
+                                <p class="text-slate-600 dark:text-slate-400 mb-4 flex-grow">تناسب اندام لوکس را با امکانات انحصاری تجربه کنید.</p>
+                                <div class="space-y-3 text-sm text-slate-600 dark:text-slate-400 border-t border-slate-200 dark:border-slate-700 pt-4">
+                                    <p><strong class="font-semibold text-slate-700 dark:text-slate-300">مراجعین:</strong> بانوان و آقایان</p>
+                                    <p><strong class="font-semibold text-slate-700 dark:text-slate-300">ساعات کاری:</strong> دوشنبه تا جمعه: ۶ صبح تا ۱۰ شب</p>
+                                    <p><strong class="font-semibold text-slate-700 dark:text-slate-300">مکان:</strong> پنت‌هاوس ۱، برج آسمان</p>
+                                </div>
+                                <div class="flex justify-between items-center mt-6">
+                                    <span class="text-indigo-500 dark:text-indigo-400 font-bold text-lg">۱۵۰ دلار/ماه</span>
+                                    <a href="/the-apex-club.html" class="bg-indigo-600 text-white px-5 py-2 rounded-full font-semibold text-sm hover:bg-indigo-700 transition">مشاهده جزئیات</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="py-24 bg-white dark:bg-slate-900">
+                <div class="container mx-auto px-6 max-w-4xl text-center">
+                    <h2 class="text-4xl font-bold text-slate-900 dark:text-white mb-4">ماموریت ما</h2>
+                    <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+                        ما تیمی از عاشقان تناسب اندام و گیک‌های فناوری هستیم که ماموریت داریم تناسب اندام را برای همه قابل دسترس کنیم. ما معتقدیم که یافتن باشگاه مناسب، اولین قدم حیاتی به سوی زندگی سالم‌تر و شادتر است. جیم‌فایندر سهم ما در کمک به شما برای برداشتن این قدم با اطمینان است.
+                    </p>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section id="faq" class="py-24 bg-slate-100 dark:bg-slate-800/50">
+                <div class="container mx-auto px-6 max-w-3xl">
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl font-bold text-slate-900 dark:text-white">سوالات متداول</h2>
+                        <p class="text-slate-600 dark:text-slate-400 mt-2">سوالی دارید؟ ما پاسخگو هستیم.</p>
+                    </div>
+                    <div class="space-y-4" id="faq-accordion">
+                        <!-- FAQ Item 1 -->
+                        <div class="bg-white dark:bg-slate-900 rounded-lg shadow-md">
+                            <button class="faq-question w-full flex justify-between items-center text-right p-5 font-semibold text-slate-800 dark:text-white">
+                                <span>چگونه می‌توانم در یک باشگاه جا رزرو کنم؟</span>
+                                <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                            <div class="faq-answer hidden p-5 pt-0 text-slate-600 dark:text-slate-400">
+                                <p>شما می‌توانید مستقیماً از طریق پلتفرم ما جای خود را رزرو کنید! کافی است باشگاه مورد علاقه خود را پیدا کنید، روی «مشاهده جزئیات» کلیک کنید و به دنبال دکمه «رزرو بازدید» یا «عضویت در کلاس» بگردید. دستورالعمل‌های روی صفحه را برای انتخاب تاریخ و زمان مورد نظر خود دنبال کنید. یک تأییدیه به ایمیل شما ارسال خواهد شد.</p>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 2 -->
+                        <div class="bg-white dark:bg-slate-900 rounded-lg shadow-md">
+                            <button class="faq-question w-full flex justify-between items-center text-right p-5 font-semibold text-slate-800 dark:text-white">
+                                <span>سیاست بازپرداخت چگونه است؟</span>
+                                <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                            <div class="faq-answer hidden p-5 pt-0 text-slate-600 dark:text-slate-400">
+                                <p>سیاست‌های بازپرداخت در هر باشگاه متفاوت است. ما سیاست خاص هر باشگاه را در صفحه جزئیات آن نمایش می‌دهیم. به طور کلی، اکثر باشگاه‌ها در صورت کنسل کردن حداقل ۲۴ ساعت قبل از بازدید یا کلاس برنامه‌ریزی شده، بازپرداخت کامل را ارائه می‌ده دهند. برای عضویت‌های ماهانه، سیاست بازپرداخت توسط شرایط و ضوابط خود باشگاه تعیین می‌شود.</p>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 3 -->
+                        <div class="bg-white dark:bg-slate-900 rounded-lg shadow-md">
+                            <button class="faq-question w-full flex justify-between items-center text-right p-5 font-semibold text-slate-800 dark:text-white">
+                                <span>آیا قیمت‌های لیست شده در جیم‌فایندر دقیق هستند؟</span>
+                                <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                            <div class="faq-answer hidden p-5 pt-0 text-slate-600 dark:text-slate-400">
+                                <p>ما با باشگاه‌های همکار خود همکاری نزدیک داریم تا اطمینان حاصل کنیم که تمام اطلاعات، از جمله قیمت‌گذاری، تا حد امکان دقیق باشد. با این حال، قیمت‌ها ممکن است تغییر کنند. ما همیشه توصیه می‌کنیم قبل از پرداخت، قیمت نهایی را مستقیماً با باشگاه تأیید کنید.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="py-24 bg-white dark:bg-slate-900">
+                <div class="container mx-auto px-6 max-w-xl text-center">
+                    <h2 class="text-4xl font-bold text-slate-900 dark:text-white mb-4">خوشحال می‌شویم از شما بشنویم</h2>
+                    <p class="text-slate-600 dark:text-slate-400 mb-8">چه صاحب باشگاه باشید، چه کاربری با بازخورد، یا فقط می‌خواهید سلام کنید.</p>
+                    <form class="space-y-5">
+                        <input type="text" placeholder="نام شما" class="w-full px-5 py-3 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+                        <input type="email" placeholder="ایمیل شما" class="w-full px-5 py-3 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+                        <textarea placeholder="پیام شما" rows="5" class="w-full px-5 py-3 rounded-2xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"></textarea>
+                        <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-8 py-3 rounded-full transition-transform transform hover:scale-105 shadow-lg">ارسال پیام</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

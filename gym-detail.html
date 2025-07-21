@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جزئیات باشگاه - جیم‌فایندر</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="https://db.onlinewebfonts.com/c/30d96e26d791255c14298567c0abc459?family=IRANSansX+Medium" type="text/css"/>
+    <style>
+        body {
+            font-family: "IRANSansX Medium", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-300 font-sans">
+    <div id="app">
+        <!-- Header -->
+        <header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50 shadow-sm dark:shadow-indigo-500/10">
+            <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <a href="/index.html" class="text-3xl font-bold text-slate-900 dark:text-white">جیم<span class="text-indigo-500">فایندر</span></a>
+                <div class="space-x-reverse space-x-8 hidden md:flex items-center">
+                    <a href="/index.html#gyms" class="hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300">یافتن باشگاه</a>
+                    <a href="/index.html#about" class="hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300">درباره ما</a>
+                    <a href="/index.html#faq" class="hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300">سوالات متداول</a>
+                    <a href="/index.html#contact" class="hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300">تماس با ما</a>
+                </div>
+                <div class="flex items-center">
+                    <button id="theme-toggle" class="text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 focus:outline-none rounded-lg text-sm p-2.5 me-2">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 5.05A1 1 0 016.465 3.636l.707.707a1 1 0 01-1.414 1.414l-.707-.707a1 1 0 010-1.414zM5 11a1 1 0 100-2H4a1 1 0 100 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    </button>
+                    <a href="/add-gym.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-5 py-2 rounded-full transition-transform transform hover:scale-105 hidden md:block shadow-lg text-sm">باشگاه خود را اضافه کنید</a>
+                    <button id="mobile-menu-button" class="md:hidden text-slate-800 dark:text-white focus:outline-none ms-2">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Gym Hero Section -->
+            <section class="relative h-96 bg-cover bg-center" style="background-image: url('GYM_IMAGE_URL');">
+                <div class="absolute inset-0 bg-black/60"></div>
+                <div class="relative z-10 flex flex-col justify-center items-center h-full text-white text-center">
+                    <h1 class="text-5xl md:text-6xl font-extrabold">نام باشگاه</h1>
+                    <p class="text-lg mt-2">مکان باشگاه</p>
+                </div>
+            </section>
+
+            <div class="container mx-auto px-6 py-16">
+                <div class="lg:grid lg:grid-cols-3 lg:gap-12">
+                    <!-- Left Column: About, Rules, Facilities -->
+                    <div class="lg:col-span-2">
+                        <section id="gym-about">
+                            <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-4">درباره نام باشگاه</h2>
+                            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                                توضیحات باشگاه
+                            </p>
+                        </section>
+
+                        <section id="gym-facilities" class="mt-12">
+                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">امکانات و تسهیلات</h3>
+                            <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-600 dark:text-slate-400">
+                                لیست امکانات باشگاه
+                            </ul>
+                        </section>
+
+                        <section id="gym-rules" class="mt-12">
+                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">قوانین باشگاه</h3>
+                            <ul class="list-disc list-inside space-y-2 text-slate-600 dark:text-slate-400">
+                                لیست قوانین باشگاه
+                            </ul>
+                        </section>
+                        
+                        <section id="gym-map" class="mt-12">
+                             <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">مکان ما</h3>
+                             <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
+                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.216659933109!2d-73.985428!3d40.748817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1629816453518!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                             </div>
+                        </section>
+                    </div>
+
+                    <!-- Right Column: Calendar & Reservation -->
+                    <div class="mt-12 lg:mt-0">
+                        <div class="sticky top-28">
+                            <section id="gym-calendar" class="bg-white dark:bg-slate-800/50 p-6 rounded-2xl shadow-lg">
+                                <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 text-center">ساعات کاری</h3>
+                                <ul class="space-y-2 text-slate-600 dark:text-slate-400">
+                                    لیست ساعات کاری باشگاه
+                                </ul>
+                            </section>
+
+                            <section id="gym-reservation" class="bg-white dark:bg-slate-800/50 p-6 rounded-2xl shadow-lg mt-8">
+                                <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 text-center">رزرو بازدید</h3>
+                                <form class="space-y-4">
+                                    <div>
+                                        <label for="name" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">نام کامل</label>
+                                        <input type="text" id="name" class="w-full px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+                                    </div>
+                                    <div>
+                                        <label for="email" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">ایمیل</label>
+                                        <input type="email" id="email" class="w-full px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+                                    </div>
+                                    <div>
+                                        <label for="date" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">تاریخ</label>
+                                        <input type="date" id="date" class="w-full px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+                                    </div>
+                                    <div>
+                                        <label for="time" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">زمان</label>
+                                        <input type="time" id="time" class="w-full px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+                                    </div>
+                                    <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-8 py-3 rounded-full transition-transform transform hover:scale-105 shadow-lg">درخواست رزرو</button>
+                                </form>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+            <div class="container mx-auto px-6 py-8 text-center text-slate-500 dark:text-slate-400">
+                <p>&copy; ۲۰۲۴ جیم‌فایندر. تمام حقوق محفوظ است.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Mobile menu toggle, theme toggle scripts...
+    </script>
+</body>
+</html>

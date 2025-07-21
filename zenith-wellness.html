@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلامتی زنیت - جیم‌فایندر</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="https://db.onlinewebfonts.com/c/30d96e26d791255c14298567c0abc459?family=IRANSansX+Medium" type="text/css"/>
+    <style>
+        body {
+            font-family: "IRANSansX Medium", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-300 font-sans">
+    <div id="app">
+        <!-- Header -->
+        <header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50 shadow-sm dark:shadow-indigo-500/10">
+            <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <a href="/index.html" class="text-3xl font-bold text-slate-900 dark:text-white">جیم<span class="text-indigo-500">فایندر</span></a>
+                <div class="space-x-8 hidden md:flex items-center">
+                    <a href="/index.html#gyms" class="hover:text-indigo-500 dark:hover:text-indigo-400">یافتن باشگاه</a>
+                    <a href="/index.html#about" class="hover:text-indigo-500 dark:hover:text-indigo-400">درباره ما</a>
+                    <a href="/index.html#faq" class="hover:text-indigo-500 dark:hover:text-indigo-400">سوالات متداول</a>
+                    <a href="/index.html#contact" class="hover:text-indigo-500 dark:hover:text-indigo-400">تماس با ما</a>
+                </div>
+                <div class="flex items-center">
+                    <button id="theme-toggle" class="text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 focus:outline-none rounded-lg text-sm p-2.5 ml-2"><!-- Icons will be injected by JS --></button>
+                    <a href="/add-gym.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-5 py-2 rounded-full hidden md:block text-sm">باشگاه خود را اضافه کنید</a>
+                    <button id="mobile-menu-button" class="md:hidden text-slate-800 dark:text-white focus:outline-none mr-2"><!-- Icon will be injected by JS --></button>
+                </div>
+            </nav>
+             <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-slate-800">
+                <a href="/index.html#gyms" class="block py-3 px-6 text-base hover:bg-slate-100 dark:hover:bg-slate-700">یافتن باشگاه</a>
+                <a href="/index.html#about" class="block py-3 px-6 text-base hover:bg-slate-100 dark:hover:bg-slate-700">درباره ما</a>
+                <a href="/index.html#faq" class="block py-3 px-6 text-base hover:bg-slate-100 dark:hover:bg-slate-700">سوالات متداول</a>
+                <a href="/index.html#contact" class="block py-3 px-6 text-base hover:bg-slate-100 dark:hover:bg-slate-700">تماس با ما</a>
+                <a href="/add-gym.html" class="block py-3 px-6 text-base hover:bg-slate-100 dark:hover:bg-slate-700">باشگاه خود را اضافه کنید</a>
+            </div>
+        </header>
+
+        <main class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+            <section class="relative h-96 bg-cover bg-center" style="background-image: url('/gym5.jpg');">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                <div class="relative z-10 flex flex-col justify-end h-full text-white text-right px-6 pb-12 md:px-12 md:pb-16 max-w-7xl mx-auto">
+                    <h1 class="text-5xl md:text-6xl font-extrabold">سلامتی زنیت</h1>
+                    <p class="text-lg mt-2 flex items-center"><svg class="w-5 h-5 ml-2 fill-current" viewBox="0 0 20 20"><path d="M10 20s-8-6.34-8-12a8 8 0 1116 0c0 5.66-8 12-8 12zm0-10a2 2 0 100-4 2 2 0 000 4z"/></svg>کوچه آرامش ۷۸، گرین ولی</p>
+                </div>
+            </section>
+
+            <div class="bg-slate-50 dark:bg-slate-900">
+                <div class="container mx-auto px-6 py-16 lg:py-24 max-w-7xl">
+                    <div class="lg:grid lg:grid-cols-3 lg:gap-16 items-start">
+                        <!-- Left/Main Column -->
+                        <div class="lg:col-span-2">
+                            <section id="gym-about">
+                                <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-4">درباره سلامتی زنیت</h2>
+                                <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-lg">تعادل خود را در سلامتی زنیت پیدا کنید، پناهگاهی که منحصراً برای بانوان طراحی شده است. ما رویکردی جامع به تناسب اندام ارائه می‌دهیم که ترکیبی از یوگا، پیلاتس و مدیتیشن برای پرورش جسم و ذهن است. استودیوی آرام ما فراری صلح‌آمیز از روزمرگی را فراهم می‌کند و به شما امکان می‌دهد بر سفر سلامتی شخصی خود تمرکز کنید.</p>
+                            </section>
+
+                            <section id="gym-gallery" class="mt-12">
+                                <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">گالری</h3>
+                                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                                    <img src="/gym1.jpg" alt="استودیوی یوگا" class="rounded-lg shadow-md aspect-video object-cover transition-transform hover:scale-105">
+                                    <img src="/gym2.jpg" alt="اتاق مدیتیشن" class="rounded-lg shadow-md aspect-video object-cover transition-transform hover:scale-105">
+                                    <img src="/gym6.jpg" alt="منطقه استراحت" class="rounded-lg shadow-md aspect-video object-cover transition-transform hover:scale-105">
+                                </div>
+                            </section>
+
+                            <section id="gym-facilities" class="mt-12">
+                                <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">امکانات و تسهیلات</h3>
+                                <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 text-slate-600 dark:text-slate-400 text-lg">
+                                    <li class="flex items-center"><svg class="w-6 h-6 ml-3 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg> چندین استودیوی یوگا و پیلاتس</li>
+                                    <li class="flex items-center"><svg class="w-6 h-6 ml-3 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> اتاق‌های مدیتیشن هدایت‌شده</li>
+                                    <li class="flex items-center"><svg class="w-6 h-6 ml-3 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 12.414a2 2 0 010-2.828l4.243-4.243a2 2 0 012.828 0l-4.243 4.243a2 2 0 01-2.828 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 8.172a4 4 0 015.656 0L19.07 12.314a2 2 0 010 2.828l-4.243 4.243a4 4 0 01-5.656-5.656L9.172 8.172z"></path></svg> سونا و اتاق بخار مادون قرمز</li>
+                                    <li class="flex items-center"><svg class="w-6 h-6 ml-3 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 3v2c0 1.105-.895 2-2 2H5c-1.105 0-2-.895-2-2V3m18 0H3m18 0h-2M3 3H1m18 0v10c0 1.105-.895 2-2 2H5c-1.105 0-2-.895-2-2V3m18 0h-2M3 3H1"></path></svg> بار چای و نوشیدنی‌های ارگانیک</li>
+                                    <li class="flex items-center"><svg class="w-6 h-6 ml-3 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path></svg> رختکن و حمام‌های خصوصی</li>
+                                    <li class="flex items-center"><svg class="w-6 h-6 ml-3 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v11.494m-5.747-8.247a5.5 5.5 0 0111.494 0M12 21.747a5.5 5.5 0 01-5.747-3.247m5.747 3.247a5.5 5.5 0 005.747-3.247"></path></svg> کارگاه‌ها و دوره‌های سلامتی</li>
+                                </ul>
+                            </section>
+                            
+                            <section id="gym-map" class="mt-12">
+                                 <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">مکان ما</h3>
+                                 <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
+                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.216659933109!2d-73.985428!3d40.748817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1629816453518!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="w-full h-full"></iframe>
+                                 </div>
+                            </section>
+                        </div>
+
+                        <!-- Right/Sticky Column -->
+                        <div class="mt-12 lg:mt-0">
+                            <div class="sticky top-28 space-y-8">
+                                <section id="gym-calendar" class="bg-white dark:bg-slate-800/50 p-6 rounded-2xl shadow-lg">
+                                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 text-center">ساعات کاری</h3>
+                                    <ul class="space-y-2 text-slate-600 dark:text-slate-400">
+                                        <li class="flex justify-between"><span>دوشنبه-شنبه</span> <span class="font-semibold">۷ صبح - ۹ شب</span></li>
+                                        <li class="flex justify-between border-t border-slate-200 dark:border-slate-700 mt-2 pt-2"><span>یکشنبه</span> <span class="font-semibold">۹ صبح - ۵ بعد از ظهر</span></li>
+                                    </ul>
+                                </section>
+
+                                <section id="gym-reservation" class="bg-white dark:bg-slate-800/50 p-6 rounded-2xl shadow-lg">
+                                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 text-center">رزرو کلاس</h3>
+                                    <form class="space-y-4">
+                                        <div>
+                                            <label for="name" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">نام کامل</label>
+                                            <input type="text" id="name" class="w-full px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+                                        </div>
+                                        <div>
+                                            <label for="email" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">ایمیل</label>
+                                            <input type="email" id="email" class="w-full px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+                                        </div>
+                                        <div>
+                                            <label for="class-type" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">انتخاب کلاس</label>
+                                            <select id="class-type" class="w-full px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+                                                <option>یوگا وینیاسا</option>
+                                                <option>پیلاتس ریفرمر</option>
+                                                <option>مدیتیشن هدایت‌شده</option>
+                                            </select>
+                                        </div>
+                                        <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-8 py-3 rounded-full transition-transform transform hover:scale-105 shadow-lg">اکنون رزرو کنید</button>
+                                    </form>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

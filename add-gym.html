@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>باشگاه خود را اضافه کنید - جیم‌فایندر</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="https://db.onlinewebfonts.com/c/30d96e26d791255c14298567c0abc459?family=IRANSansX+Medium" type="text/css"/>
+    <style>
+        body {
+            font-family: "IRANSansX Medium", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-300 font-sans">
+    <div id="app">
+        <!-- Header -->
+        <header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50 shadow-sm dark:shadow-indigo-500/10">
+            <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <a href="/index.html" class="text-3xl font-bold text-slate-900 dark:text-white">جیم<span class="text-indigo-500">فایندر</span></a>
+                <div class="space-x-reverse space-x-8 hidden md:flex items-center">
+                    <a href="/index.html#gyms" class="hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300">یافتن باشگاه</a>
+                    <a href="/index.html#about" class="hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300">درباره ما</a>
+                    <a href="/index.html#faq" class="hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300">سوالات متداول</a>
+                    <a href="/index.html#contact" class="hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300">تماس با ما</a>
+                </div>
+                <div class="flex items-center">
+                    <button id="theme-toggle" class="text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 focus:outline-none rounded-lg text-sm p-2.5 me-4">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 5.05A1 1 0 016.465 3.636l.707.707a1 1 0 01-1.414 1.414l-.707-.707a1 1 0 010-1.414zM5 11a1 1 0 100-2H4a1 1 0 100 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    </button>
+                    <button id="mobile-menu-button" class="md:hidden text-slate-800 dark:text-white focus:outline-none">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </nav>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-slate-800">
+                <a href="/index.html#gyms" class="block py-3 px-6 text-base hover:bg-slate-100 dark:hover:bg-slate-700">یافتن باشگاه</a>
+                <a href="/index.html#about" class="block py-3 px-6 text-base hover:bg-slate-100 dark:hover:bg-slate-700">درباره ما</a>
+                <a href="/index.html#contact" class="block py-3 px-6 text-base hover:bg-slate-100 dark:hover:bg-slate-700">تماس با ما</a>
+                <a href="/index.html#faq" class="block py-3 px-6 text-base hover:bg-slate-100 dark:hover:bg-slate-700">سوالات متداول</a>
+            </div>
+        </header>
+
+        <main class="py-16 md:py-24">
+            <section id="add-gym-form" class="container mx-auto px-6">
+                <div class="max-w-3xl mx-auto bg-white dark:bg-slate-800/50 p-8 md:p-12 rounded-2xl shadow-lg">
+                    <div class="text-center mb-10">
+                        <h1 class="text-4xl font-bold text-slate-900 dark:text-white">باشگاه خود را لیست کنید</h1>
+                        <p class="text-slate-600 dark:text-slate-400 mt-2">برای نمایش باشگاه خود در جیم‌فایندر، فرم زیر را پر کنید.</p>
+                    </div>
+                    
+                    <form class="space-y-6">
+                        <!-- Gym Information -->
+                        <div class="space-y-4 border-b border-slate-200 dark:border-slate-700 pb-6">
+                            <h2 class="text-xl font-semibold text-slate-900 dark:text-white">جزئیات باشگاه</h2>
+                            <div>
+                                <label for="gym-name" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">نام باشگاه</label>
+                                <input type="text" id="gym-name" placeholder="مثال: باشگاه پاورهاوس" class="w-full px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="gym-location" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">مکان</label>
+                                    <input type="text" id="gym-location" placeholder="مثال: خیابان فیتنس ۱۲۳، مرکز شهر" class="w-full px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+                                </div>
+                                <div>
+                                    <label for="gym-clientele" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">مراجعین</label>
+                                    <select id="gym-clientele" class="w-full px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+                                        <option>بانوان و آقایان</option>
+                                        <option>فقط آقایان</option>
+                                        <option>فقط بانوان</option>
+                                    </select>
+                                </div>
+                            </div>
+                             <div>
+                                <label for="gym-hours" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">ساعات کاری</label>
+                                <input type="text" id="gym-hours" placeholder="مثال: دوشنبه-جمعه: ۶ صبح - ۱۰ شب، شنبه-یکشنبه: ۸ صبح - ۸ شب" class="w-full px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+                            </div>
+                            <div>
+                                <label for="gym-description" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">توضیحات</label>
+                                <textarea id="gym-description" rows="4" placeholder="به ما بگویید چه چیزی باشگاه شما را خاص می‌کند..." class="w-full px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"></textarea>
+                            </div>
+                             <div>
+                                <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">امکانات</label>
+                                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm">
+                                    <label class="flex items-center space-x-2"><input type="checkbox" class="h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"><span>دسترسی ۲۴/۷</span></label>
+                                    <label class="flex items-center space-x-2"><input type="checkbox" class="h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"><span>استخر شنا</span></label>
+                                    <label class="flex items-center space-x-2"><input type="checkbox" class="h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"><span>سونا</span></label>
+                                    <label class="flex items-center space-x-2"><input type="checkbox" class="h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"><span>تمرین خصوصی</span></label>
+                                    <label class="flex items-center space-x-2"><input type="checkbox" class="h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"><span>کلاس‌های گروهی</span></label>
+                                    <label class="flex items-center space-x-2"><input type="checkbox" class="h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"><span>پارکینگ رایگان</span></label>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="gym-image" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">آپلود تصویر</label>
+                                <input type="file" id="gym-image" class="block w-full text-sm text-slate-500 file:ml-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-indigo-50 dark:file:bg-indigo-900/50 file:text-indigo-700 dark:file:text-indigo-300 hover:file:bg-indigo-100 dark:hover:file:bg-indigo-900">
+                            </div>
+                        </div>
+
+                        <!-- Contact Information -->
+                        <div class="space-y-4 pt-6">
+                            <h2 class="text-xl font-semibold text-slate-900 dark:text-white">اطلاعات تماس شما</h2>
+                            <div>
+                                <label for="owner-name" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">نام کامل</label>
+                                <input type="text" id="owner-name" placeholder="مثال: نگار نادری" class="w-full px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+                            </div>
+                            <div>
+                                <label for="owner-email" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">آدرس ایمیل</label>
+                                <input type="email" id="owner-email" placeholder="you@example.com" class="w-full px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+                            </div>
+                        </div>
+
+                        <div class="pt-6">
+                            <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-8 py-3 rounded-full transition-transform transform hover:scale-105 shadow-lg">ارسال باشگاه شما</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
