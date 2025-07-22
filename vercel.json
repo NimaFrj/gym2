@@ -1,1 +1,15 @@
-{ "rewrites": [{ "source": "/(.*)", "destination": "/api" }] }
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/add-gym", "destination": "/add-gym.html" },
+    { "source": "/family-fit-center", "destination": "/family-fit-center.html" },
+    { "source": "/gym-detail", "destination": "/gym-detail.html" },
+    { "source": "/iron-grit", "destination": "/iron-grit.html" },
+    { "source": "/powerhouse-fitness", "destination": "/powerhouse-fitness.html" },
+    { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
+    { "source": "/the-anvil-gym", "destination": "/the-anvil-gym.html" },
+    { "source": "/the-apex-club", "destination": "/the-apex-club.html" },
+    { "source": "/zenith-wellness", "destination": "/zenith-wellness.html" }
+  ]
+}
