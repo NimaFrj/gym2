@@ -1,6 +1,6 @@
 // Function to set the theme based on user preference
 const applyTheme = () => {
-    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    if (localStorage.getItem('color-theme') === 'dark') {
         document.documentElement.classList.add('dark');
     } else {
         document.documentElement.classList.remove('dark');
@@ -16,7 +16,7 @@ const setupThemeToggle = () => {
     if (!themeToggleButton || !themeToggleDarkIcon || !themeToggleLightIcon) return;
 
     // Set initial icon visibility
-    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    if (localStorage.getItem('color-theme') === 'dark') {
         themeToggleLightIcon.classList.remove('hidden');
     } else {
         themeToggleDarkIcon.classList.remove('hidden');
@@ -26,22 +26,13 @@ const setupThemeToggle = () => {
         themeToggleDarkIcon.classList.toggle('hidden');
         themeToggleLightIcon.classList.toggle('hidden');
 
-        if (localStorage.getItem('color-theme')) {
-            if (localStorage.getItem('color-theme') === 'light') {
-                document.documentElement.classList.add('dark');
-                localStorage.setItem('color-theme', 'dark');
-            } else {
-                document.documentElement.classList.remove('dark');
-                localStorage.setItem('color-theme', 'light');
-            }
+        // if currently dark, switch to light
+        if (document.documentElement.classList.contains('dark')) {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('color-theme', 'light');
         } else {
-            if (document.documentElement.classList.contains('dark')) {
-                document.documentElement.classList.remove('dark');
-                localStorage.setItem('color-theme', 'light');
-            } else {
-                document.documentElement.classList.add('dark');
-                localStorage.setItem('color-theme', 'dark');
-            }
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('color-theme', 'dark');
         }
     });
 };
@@ -131,7 +122,7 @@ const injectFooter = () => {
     }
 };
 
-// Run all setup functions on DOMContentLoaded
+// Apply theme when the page loads
 document.addEventListener('DOMContentLoaded', () => {
     applyTheme();
     setupThemeToggle();
